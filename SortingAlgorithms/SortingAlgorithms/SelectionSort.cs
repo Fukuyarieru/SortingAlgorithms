@@ -6,7 +6,6 @@ public partial class SortingAlgorithms
         int foundindex = 0;
         for (int index = 0; index < arr.Length; index++)
         {
-            //Program.DebugArr(arr);
             for (int pointer = index; pointer < arr.Length; pointer++)
             {
                 if (found < arr[index])
@@ -17,6 +16,7 @@ public partial class SortingAlgorithms
             }
             if (arr[index] < found)
             {
+                // Program.DebugArr(arr);
                 arr[foundindex] = arr[index];
                 arr[index] = found;
             }
